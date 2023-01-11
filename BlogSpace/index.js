@@ -45,6 +45,7 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
             .then(data => {
                 postArray.unshift(data)
                 render()
+                document.getElementById("formData").reset()
             })
   
     })
